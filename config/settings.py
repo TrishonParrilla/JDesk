@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'theme',
     'pages',
     'accounts',
+    'dashboard'
 
 ]
 
