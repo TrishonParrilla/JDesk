@@ -3,5 +3,77 @@
 {% block title %}Home - JDesk{% endblock %}
 
 {% block content %}
-<h1>Welcome to JDesk</h1>
+<main class="min-h-screen bg-gradient-to-b from-slate-100 via-slate-200 to-slate-300 text-slate-900">
+    <section class="mx-auto flex max-w-6xl flex-col items-center px-6 pt-14 text-center">
+        <div class="w-full rounded-3xl border border-slate-200 bg-slate-950 px-8 py-14 shadow-2xl shadow-slate-900/20">
+            <span class="inline-flex items-center rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1 text-sm font-medium text-orange-300">
+                Task management made simple
+            </span>
+            <h1 class="mt-6 text-4xl font-bold tracking-tight text-white md:text-5xl">
+                Welcome to JDesk
+            </h1>
+            <p class="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-300 md:text-lg">
+                Your one-stop solution for managing tasks efficiently, staying organized, and keeping your workflow clear.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+                <a href="{% url 'signup' %}" class="rounded-lg bg-orange-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-400">
+                    Get Started
+                </a>
+                <a href="#learn-more" class="rounded-lg border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="mx-auto max-w-6xl px-6 py-12">
+        <div class="grid gap-6 md:grid-cols-3">
+            <div class="flex min-h-40 flex-col rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-lg shadow-slate-900/10 transition-transform-shadow duration-[500ms] hover:-translate-y-1 hover:shadow-xl">
+                <h2 class="text-lg font-semibold text-slate-900">Manage tasks efficiently</h2>
+                <p class="mt-3 text-sm leading-6 text-slate-600">Organize your tasks in a way that maximizes productivity and minimizes stress.</p>
+            </div>
+            <div class="flex min-h-40 flex-col rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-lg shadow-slate-900/10 transition-transform-shadow duration-[500ms] hover:-translate-y-1 hover:shadow-xl">
+                <h2 class="text-lg font-semibold text-slate-900">Prioritize your tasks effectively</h2>
+                <p class="mt-3 text-sm leading-6 text-slate-600">Focus on what matters most by setting priorities for your tasks, ensuring you tackle the most important ones first.</p>
+            </div>
+            <div class="flex min-h-40 flex-col rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-lg shadow-slate-900/10  transition-transform-shadow duration-[500ms]  hover:-translate-y-1 hover:shadow-xl">
+                <h2 class="text-lg font-semibold text-slate-900">Track your progress seamlessly</h2>
+                <p class="mt-3 text-sm leading-6 text-slate-600">Keep track of your progress effortlessly, ensuring you stay on top of your tasks and achieve your goals efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn-more" class="mx-auto max-w-6xl px-6 pb-16">
+        <div class="grid gap-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl shadow-slate-900/10 md:grid-cols-[1.1fr_0.9fr] md:p-10">
+            <div>
+                <span class="inline-flex items-center rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-orange-500">
+                    Why JDesk
+                </span>
+                <h3 class="mt-4 text-3xl font-bold tracking-tight text-slate-950">A cleaner way to manage trial work.</h3>
+                <p class="mt-4 text-sm leading-7 text-slate-600 md:text-base">
+                    JDesk keeps your tasks, trial tickets, and progress visible in one place so your team can move faster with less clutter.
+                </p>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl bg-slate-950 p-5 text-white shadow-lg shadow-black/10">
+                    <p class="text-sm text-slate-400">Quick Setup</p>
+                    <p class="mt-2 text-lg font-semibold">Get started in minutes.</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                    <p class="text-sm text-slate-500">Focused View</p>
+                    <p class="mt-2 text-lg font-semibold text-slate-900">See only what matters.</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                    <p class="text-sm text-slate-500">Team Ready</p>
+                    <p class="mt-2 text-lg font-semibold text-slate-900">Easy to share and track.</p>
+                </div>
+                <div class="rounded-2xl bg-orange-500 p-5 text-white shadow-lg shadow-orange-500/20">
+                    <p class="text-sm text-orange-100">Built for Growth</p>
+                    <p class="mt-2 text-lg font-semibold">Scale from trial to full workflow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 {% endblock %}

@@ -1,10 +1,12 @@
+{% load static %}
+{% load static tailwind_tags %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}JDesk{% endblock %}</title>
-    {% block css %}{% endblock %}
+    {% tailwind_css %}
 </head>
 <body>
     {% include "pages/navbar.html" %}

@@ -8,3 +8,6 @@ class HomePageView(TemplateView):
 
 class AboutPageView(TemplateView):
     template_name = "pages/about.html"
+
+class TrialTicketView(TemplateView):
+    template_name = "pages/trial_ticket.html"
